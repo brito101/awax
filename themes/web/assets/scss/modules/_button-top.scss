@@ -1,0 +1,28 @@
+.smoothscroll-top {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: $index-modal;
+  color: $color-font-theme;
+  width: 47px;
+  height: 44px;
+  line-height: 44px;
+  right: 25px;
+  bottom: -25px;
+  padding-top: 2px;
+  font-size: 1.5rem;
+  @include border-radius($radius-normal);
+  @include gradient;
+  @include gradient-theme;
+  @include gradient-hover;
+  @include transition($hover-duration);
+
+  &.show {
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1;
+    bottom: 25px;
+  }
+}

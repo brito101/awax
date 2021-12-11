@@ -1,0 +1,79 @@
+/*WYSH HTMLCHARS*/
+.htmlchars {
+  color: $color-default;
+
+  & :first-child {
+    margin-top: 0;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 40px 0 20px 0;
+    font-weight: $weight-bold;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin-top: 25px;
+  }
+
+  ul,
+  ol {
+    margin: 20px 0 20px 40px;
+  }
+
+  ul {
+    list-style: circle;
+  }
+
+  ol li,
+  ul li {
+    margin-top: 5px;
+  }
+
+  a {
+    color: $color-theme-hover-opposit;
+    font-weight: $weight-bold;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    margin-top: 30px;
+    @include border-radius($radius-medium);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    border: 1px solid $color-theme-support;
+    height: auto !important;
+  }
+
+  pre {
+    padding: 20px;
+    @include border-radius($radius-normal);
+    background: $color-font-theme;
+    margin: 20px 0;
+    overflow-x: auto;
+  }
+}

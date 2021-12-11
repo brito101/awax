@@ -1,0 +1,20 @@
+.chart {
+  padding-top: 30px;
+
+  .arrow_box {
+    position: relative;
+    @include gradient-theme;
+    font-size: 0.75rem;
+  }
+
+  .apexcharts-tooltip {
+    color: $color-font-theme;
+    transform: translateX(10px) translateY(10px);
+    overflow: visible !important;
+    white-space: normal !important;
+    span {
+      padding: 5px 10px;
+      display: inline-block;
+    }
+  }
+}

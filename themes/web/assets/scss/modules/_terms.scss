@@ -1,0 +1,28 @@
+/*TERMS PAGE*/
+.terms_page_header {
+  text-align: center;
+  padding: 50px 40px;
+  @include gradient-theme;
+  background-size: 100%;
+  color: $color-font-theme;
+
+  h1 {
+    font-size: $font-max;
+    font-weight: $weight-bold;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  p {
+    margin-top: 10px;
+    font-weight: $weight-bold;
+    color: $color-font-theme;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+.terms_page_content {
+  width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+  max-width: 80%;
+}

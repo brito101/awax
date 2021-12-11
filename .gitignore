@@ -1,0 +1,5 @@
+.vscode/
+Config.php
+vendor/*
+node_modules/*
+storage/*

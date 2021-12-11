@@ -1,0 +1,86 @@
+/**Medidas */
+@mixin container {
+  display: block;
+  width: 1140px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@mixin section-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin border-radius($radius) {
+  border-radius: ($radius);
+  -moz-border-radius: ($radius);
+  -webkit-border-radius: ($radius);
+}
+
+@mixin border-bottom-left-radius($radius) {
+  border-bottom-right-radius: $radius;
+  -moz-border-bottom-left-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius) {
+  border-bottom-right-radius: $radius;
+  -moz-border-bottom-right-radius: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+}
+
+@mixin rotate($deg) {
+  transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+}
+
+@mixin transition($duration) {
+  transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -webkit-transition-duration: $duration;
+}
+
+@mixin transform($value) {
+  transform: $value;
+  -o-transform: $value;
+  -webkit-transform: $value;
+  -moz-transform: $value;
+}
+
+@mixin gradient {
+  background-size: 200% auto;
+  transition-duration: 0.5s;
+}
+
+@mixin gradient-theme {
+  background-image: linear-gradient(to right, #b28756 0%, #906634 50%, #b28756 100%);
+}
+
+@mixin gradient-opposit {
+  background-image: linear-gradient(to right, #333 0%, #000 50%, #333 100%);
+}
+
+@mixin gradient-hover {
+  &:hover {
+    background-position: right center;
+  }
+}
+
+@mixin icon-notext {
+  &:before {
+    top: 0;
+    margin-right: 0 !important;
+  }
+}
+
+@mixin box-shadow($value) {
+  box-shadow: $value;
+  -moz-box-shadow: $value;
+  -webkit-box-shadow: $value;
+}

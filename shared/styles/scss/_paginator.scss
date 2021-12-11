@@ -1,0 +1,39 @@
+/*DEFAULT PAGINATOR*/
+.paginator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+
+  a,
+  span {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid $color-theme;
+    border-right: 0;
+    color: $color-theme;
+    font-weight: $weight-bold;
+    text-decoration: none;
+    @include transition($hover-duration);
+  }
+
+  a:first-of-type {
+    @include border-radius($radius-normal 0 0 $radius-normal);
+  }
+
+  a:last-of-type {
+    border-right: 1px solid $color-theme;
+    @include border-radius(0 $radius-normal $radius-normal 0);
+  }
+
+  a:hover {
+    @include gradient-theme;
+    background-size: 200%;
+    color: $color-font-theme;
+  }
+
+  span {
+    background: $color-theme;
+    color: $color-theme-opposit;
+  }
+}

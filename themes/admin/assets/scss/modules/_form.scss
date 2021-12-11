@@ -1,0 +1,105 @@
+/*FORM*/
+.app_form {
+  .label {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .legend {
+    display: block;
+    margin-bottom: 10px;
+    font-size: $font-small;
+    font-weight: $weight-strong;
+    color: #888888;
+  }
+
+  input,
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    color: #000000;
+    font-size: $font-normal;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    resize: none;
+    @include border-radius(0 $radius-normal $radius-normal $radius-normal);
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("#{$imgPath}/selectarrow.png");
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-size: auto 20%;
+  }
+
+  input[type="date"] {
+    -webkit-appearance: none;
+    font-size: 1em !important;
+    font-family: "Open Sans", serif !important;
+    padding: 7px 10px !important;
+    font-weight: $font-normal;
+    color: #888888;
+  }
+
+  .btn {
+    font-size: $font-normal;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: 672px) {
+    & .label_g2 {
+      display: flex;
+
+      & .label {
+        flex-basis: calc(50% - 10px);
+
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    button {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.app_form_footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 540px) {
+    & {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+
+      & *:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .remove_link {
+    font-size: $font-small;
+    font-weight: $weight-bold;
+    color: $color-red;
+
+    &:hover {
+      color: $hover-color-red;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+/** Colors */
+$backgroud-color: #f7f7f7;
+$color-1: #b28756;
+$color-1-hover: #906634;
+$color-2: #111;
+$color-3: #f8f8ff;
+$color-4: #ccc;
+$color-5: #eee;
+$color-default: #555;
+$color-999: #999;
+$border-section: #ddd;
+
+$color-dark: #18001f;
+$color-theme: #d4af37;
+$color-theme-hover: #876d16;
+$color-theme-opposit: #cb22d4;
+$color-theme-hover-opposit: #821c87;
+$color-theme-support: #4cd4b8;
+$color-font-theme: #f0f0f0;
+$background-theme-color: #f8f8ff;
+$text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+
+$color-green: #36ba9b;
+$color-blue: #39aed9;
+$color-yellow: #f5b946;
+$color-red: #d94352;
+
+$hover-color-green: #61ddbc;
+$hover-color-blue: #66d4f1;
+$hover-color-yellow: #fcd277;
+$hover-color-red: #f76c82;
+
+/** Fonts */
+//size
+$font-extra: 3rem;
+$font-max: 2rem;
+$font-large: 1.4rem;
+$font-22: 1.375rem;
+$font-medium: 1.25rem;
+$font-16: 1rem;
+$font-17: 1.0625rem;
+$font-14: 0.875rem;
+$font-normal: 0.8125rem;
+$font-small: 0.75rem;
+
+//weight
+$weight-strong: 600;
+
+$weight-black: 900;
+$weight-bold: 700;
+
+$weight-normal: 400;
+$weight-light: 300;
+
+/** Radius */
+$radius-max: 1.875rem;
+$radius-large: 1.25rem;
+$radius-medium: 0.625rem;
+$radius-normal: 0.3125rem;
+
+/** Z-Index */
+$index-max: 999;
+$index-modal: 4;
+$index-menu: 3;
+$index-fold: 2;
+$index-patern: 1;
+$index-back: -1;
+
+/** Transitions */
+$hover-duration: 0.3s;

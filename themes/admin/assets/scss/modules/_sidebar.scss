@@ -1,0 +1,57 @@
+.sidebar {
+  flex-basis: 20%;
+
+  @media (max-width: 80em) {
+    order: 1;
+  }
+
+  @media (max-width: 62em) {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: $font-medium;
+    font-weight: $weight-light;
+  }
+
+  p {
+    font-size: $font-small;
+    font-weight: $weight-strong;
+    color: $color-dark;
+    margin-top: 15px;
+  }
+
+  nav {
+    display: block;
+    margin-top: 30px;
+
+    &.active {
+      background: #ffffff !important;
+      padding-left: 20px !important;
+    }
+
+    a {
+      margin-bottom: 10px;
+      display: block;
+      font-size: $font-small;
+      padding: 10px 0;
+      font-weight: bold;
+      color: #555555;
+      @include border-radius($radius-normal);
+
+      &:hover,
+      &.active {
+        background: #ffffff;
+        padding-left: 20px;
+      }
+    }
+
+    img {
+      width: 100%;
+      margin-top: 30px;
+      max-width: 211px;
+      @include border-radius($radius-normal);
+    }
+  }
+}

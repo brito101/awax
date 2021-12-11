@@ -1,0 +1,33 @@
+/*EMPTY CONTENT*/
+.empty_content {
+  width: 800px;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: $color-default;
+  @include container;
+
+  h3 {
+    font-size: $font-max;
+    font-weight: $weight-bold;
+  }
+
+  p {
+    font-size: $font-normal;
+    margin: 10px 0 40px 0;
+  }
+
+  a {
+    display: inline-block;
+    padding: 20px 40px;
+    font-weight: $weight-bold;
+    color: $color-font-theme;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: $font-medium;
+    @include gradient;
+    @include gradient-theme;
+    @include gradient-hover;
+    @include border-radius($radius-normal);
+  }
+}

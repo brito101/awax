@@ -1,0 +1,136 @@
+/*LOGIN*/
+.login {
+    background: $color-dark;
+    color: $color-default;
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px 0;
+    overflow-x: hidden;
+
+    article {
+        width: 400px;
+        max-width: 90%;
+        margin: auto;
+        padding: 20px;
+        background: $background-theme-color;
+        @include border-radius($radius-normal);
+
+        img {
+            margin: 0 auto;
+            display: flex;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: $font-max;
+        }
+
+        form {
+            display: block;
+            margin: 0 0 20px 0;
+
+            label {
+                display: block;
+                margin-bottom: 20px;
+
+                span {
+                    display: block;
+                    font-size: $font-small;
+                    font-weight: bold;
+                }
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid $color-dark;
+                    outline: none;
+                    display: block;
+                    width: 100%;
+                    padding: 10px 0;
+                    font-size: $font-normal;
+                    background-color: $background-theme-color;
+                }
+            }
+
+            button {
+                display: block;
+                cursor: pointer;
+                width: 100%;
+                padding: 10px;
+                border: none;
+                color: $color-font-theme;
+                font-size: $font-normal;
+                font-weight: $weight-bold;
+                text-shadow: $text-shadow;
+                @include border-radius($radius-normal);
+                @include gradient;
+                @include gradient-theme;
+                @include gradient-hover;
+                @include transition($hover-duration);
+            }
+        }
+
+        footer {
+            text-align: center;
+            font-size: $font-small;
+            font-weight: 300;
+
+            p {
+                margin: 0;
+            }
+
+            a {
+                display: block;
+                font-size: $font-small;
+                color: $color-dark;
+                text-decoration: none;
+                font-weight: bold;
+                margin-top: 5px;
+                @include transition($hover-duration);
+
+                &:hover {
+                    color: $color-theme-hover-opposit;
+                }
+            }
+        }
+    }
+}
+
+/*MESSAGES*/
+.ajax_response {
+    margin: 20px auto;
+
+    .message {
+        font-size: $font-normal;
+        font-weight: $weight-strong;
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid $color-default;
+        @include border-radius($radius-normal);
+
+        &.success {
+            color: $color-green;
+            border-color: $color-green;
+        }
+
+        &.info {
+            color: $color-blue;
+            border-color: $color-blue;
+        }
+
+        &.warning {
+            color: $color-yellow;
+            border-color: $color-yellow;
+        }
+
+        &.error {
+            color: $color-red;
+            border-color: $color-red;
+        }
+    }
+}

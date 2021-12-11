@@ -1,0 +1,335 @@
+.dash {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  a {
+    transition-duration: 0.2s;
+    text-decoration: none;
+  }
+
+  /*sidebar*/
+  & > aside {
+    background: $color-dark;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (max-width: 1280px) {
+      & {
+        position: fixed;
+        max-width: 260px;
+        height: 100%;
+        overflow-y: auto;
+        top: 0;
+        right: -260px;
+        z-index: $index-max;
+      }
+    }
+
+    & > button {
+      color: $color-font-theme;
+      position: absolute;
+      top: 40px;
+      cursor: pointer;
+      @include gradient;
+      @include gradient-theme;
+      @include gradient-hover;
+      @include border-radius($radius-normal);
+      width: 40px;
+      height: 40px;
+      font-size: $font-medium;
+      outline: none;
+      border: none;
+
+      &::before {
+        position: absolute !important;
+        top: 25% !important;
+        left: 25% !important;
+      }
+
+      &.close_menu {
+        left: 10%;
+        display: none;
+
+        @media (max-width: 1280px) {
+          display: block;
+        }
+      }
+
+      &.short_menu {
+        right: 10%;
+
+        &.rotate {
+          @include transform(rotate(180deg));
+          right: 10px;
+        }
+
+        @media (max-width: 1280px) {
+          display: none;
+        }
+      }
+    }
+
+    & > article {
+      padding: 20px 0;
+      background: $color-dark;
+      text-align: center;
+
+      div {
+        img {
+          @include border-radius(50%);
+          padding: 2px;
+          border: 2px solid $color-theme-support;
+          max-width: 30%;
+          margin-bottom: 10px;
+        }
+      }
+
+      h3 {
+        font-size: $font-normal;
+        color: $color-theme;
+        font-weight: $weight-normal;
+      }
+    }
+
+    ul {
+      /*nav*/
+      li {
+        display: block;
+        width: 100%;
+
+        a {
+          display: block;
+          width: 80%;
+          padding: 10px 30px;
+          color: $color-font-theme;
+          background: $color-dark;
+          font-weight: 600;
+          font-size: $font-small;
+          @include border-radius($radius-normal);
+          margin: 5px auto;
+          text-align: left;
+
+          &:before {
+            font-size: $font-medium;
+          }
+        }
+
+        &.active a,
+        & a:hover {
+          @include gradient-theme;
+          @include gradient-hover;
+          @include gradient;
+          color: $color-font-theme;
+        }
+
+        &.active a {
+          transition-duration: 0.2s !important;
+        }
+
+        &.active a:hover {
+          transition-duration: 0.5s !important;
+        }
+      }
+    }
+
+    &.short {
+      & > article {
+        height: 130px;
+        padding: 0;
+
+        div,
+        img,
+        h3 {
+          display: none;
+        }
+      }
+
+      ul {
+        li {
+          width: 40px !important;
+          margin-left: 10px;
+          margin-right: 10px;
+
+          a {
+            font-size: 0 !important;
+            padding-right: 20px;
+            padding-left: 20px;
+            transition-duration: 0s !important;
+
+            &::before {
+              left: -10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dash_content {
+    flex-basis: 100%;
+    color: $color-default;
+
+    /*userbar*/
+    & > div {
+      padding: 0 0 4px 0;
+      overflow: hidden;
+
+      .dash_userbar_box {
+        padding: 15px 0;
+        color: $color-font-theme;
+        @include gradient-theme;
+        @include gradient;
+        @include box-shadow(0 0 4px 0 $color-default);
+
+        .dash_content_box {
+          padding: 0 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .logo {
+            text-decoration: none;
+            @include flex-wrap;
+            align-items: center;
+
+            img {
+              width: 30px;
+              height: 30px;
+
+              @media (max-width: 300px) {
+                display: none;
+              }
+            }
+
+            h3 {
+              @include transition($hover-duration);
+              color: $color-font-theme;
+              font-weight: $weight-bold;
+              font-size: $font-large;
+            }
+
+            &:hover {
+              padding-left: 10px;
+            }
+          }
+
+          .dash_userbar_box_bar {
+            font-size: $font-small;
+            display: flex;
+            align-items: center;
+            @include transition($hover-duration);
+
+            span,
+            a {
+              margin-left: 20px;
+              font-weight: $weight-strong;
+            }
+
+            a {
+              cursor: pointer;
+              padding: 4px 8px;
+              color: $color-font-theme;
+              background: rgba(0, 0, 0, 0.3);
+              @include border-radius($radius-normal);
+
+              &:hover {
+                background: rgba(0, 0, 0, 0.6);
+              }
+            }
+          }
+        }
+
+        .mobile_menu {
+          display: none;
+          cursor: pointer;
+          font-size: $font-medium;
+          padding: 4px 8px;
+          color: $color-font-theme;
+          background: rgba(0, 0, 0, 0.3);
+          @include border-radius($radius-normal);
+
+          @media (max-width: 1280px) {
+            & {
+              display: block;
+            }
+          }
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.6);
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .on_mobile {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 1280px) {
+      .no_mobile {
+        display: none !important;
+      }
+    }
+
+    /*content*/
+    .content {
+      max-width: 72em;
+      margin: auto;
+      padding: 20px 30px;
+      display: flex;
+
+      @media (max-width: 992px) {
+        & {
+          flex-wrap: wrap-reverse;
+        }
+      }
+
+      /*content app*/
+      .dash_content_app {
+        padding-left: 50px;
+        flex-basis: 80%;
+
+        @media (max-width: 1280px) {
+          & {
+            padding: 0 50px 0 0;
+          }
+        }
+
+        @media (max-width: 992px) {
+          & {
+            flex-basis: 100%;
+            padding: 0;
+          }
+        }
+      }
+
+      .dash_content_app_header {
+        @include flex-wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 720px) {
+          & {
+            font-size: $font-small;
+          }
+        }
+
+        h2 {
+          @media (max-width: 540px) {
+            margin-bottom: 20px;
+            flex-basis: 100%;
+          }
+        }
+      }
+
+      .dash_content_app_box {
+        margin-top: 30px;
+      }
+    }
+  }
+}

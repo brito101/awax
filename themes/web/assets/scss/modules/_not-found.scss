@@ -1,0 +1,36 @@
+/*NOT FOUND PAGE 404*/
+.not_found {
+  text-align: center;
+  color: $color-default;
+
+  div {
+    @include container;
+
+    header {
+      width: 500px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      .error {
+        font-size: 4rem;
+        font-weight: $weight-light;
+        color: $color-theme-hover-opposit;
+        margin-bottom: 20px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 20px 40px;
+      color: $color-font-theme;
+      text-decoration: none;
+      font-weight: $weight-bold;
+      @include gradient;
+      @include gradient-theme;
+      @include gradient-hover;
+      @include transition($hover-duration);
+      @include border-radius($radius-normal);
+    }
+  }
+}

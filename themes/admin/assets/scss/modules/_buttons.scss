@@ -1,0 +1,46 @@
+/*BUTTONS*/
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #555555;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 0.9em;
+  font-weight: $weight-strong;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  @include border-radius($radius-normal);
+  @include transition($hover-duration);
+}
+
+.btn-green {
+  background-color: $color-green;
+
+  &:hover {
+    background-color: $hover-color-green;
+  }
+}
+
+.btn-blue {
+  background-color: $color-blue;
+
+  &:hover {
+    background-color: $hover-color-blue;
+  }
+}
+
+.btn-red {
+  background-color: $color-red;
+
+  &:hover {
+    background-color: $hover-color-red;
+  }
+}
+
+.btn-yellow {
+  background-color: $color-yellow;
+
+  &:hover {
+    background-color: $hover-color-yellow;
+  }
+}

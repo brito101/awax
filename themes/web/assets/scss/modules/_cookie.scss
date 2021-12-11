@@ -1,0 +1,60 @@
+/**COOKIE CONSENT*/
+#cookieConsent {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $index-modal;
+  background-color: rgba(85, 85, 85, 0.5);
+  text-align: center;
+  padding: 20px;
+  @include flex-wrap;
+  justify-content: center;
+
+  .container {
+    padding: 20px 0;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $color-font-theme;
+    font-size: $font-small;
+    flex-basis: 100%;
+
+    a {
+      color: $color-theme;
+      font-weight: $weight-bold;
+      text-decoration: none;
+    }
+  }
+
+  .footer_optout_btn {
+    padding: 12px 24px;
+    font-size: $font-normal;
+    font-weight: $weight-bold;
+    text-decoration: none;
+    color: $color-font-theme;
+    @include gradient;
+    @include gradient-hover;
+    @include border-radius($radius-normal);
+
+    @media (max-width: 512px) {
+      width: 80%;
+      margin: 0 auto !important;
+    }
+
+    &:first-of-type {
+      @include gradient-theme;
+      margin-right: 20px;
+    }
+
+    &:last-of-type {
+      @include gradient-opposit;
+
+      @media (max-width: 512px) {
+        margin-top: 20px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "brito101/my_page",
+  "description": "Personal Web Site",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Rodrigo Brito",
+      "email": "contato@rodrigobrito.dev.br",
+      "homepage": "https://www.rodrigobrito.dev.br",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "Source/"
+    },
+    "files": [
+      "Source/Boot/Config.php",
+      "Source/Boot/Helpers.php",
+      "Source/Boot/Minify/Web.php",
+      "Source/Boot/Minify/Admin.php"
+    ]
+  },
+  "require": {
+    "php": "^7.0",
+    "ext-pdo": "^7.0",
+    "league/plates": "v4.0.0-alpha",
+    "matthiasmullie/minify": "^1.3",
+    "coffeecode/uploader": "^1.0",
+    "coffeecode/cropper": "^1.0",
+    "coffeecode/optimizer": "^2.0",
+    "coffeecode/router": "^1.0",
+    "ext-json": "*",
+    "brito101/paginator": "^1.0"
+  }
+}

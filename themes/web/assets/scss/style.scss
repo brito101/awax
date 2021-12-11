@@ -1,0 +1,19 @@
+$imgPath: "../../assets/images";
+
+@import "../../../../shared/styles/scss/normalize";
+@import "../../../../shared/styles/scss/variables";
+@import "../../../../shared/styles/scss/mixins";
+@import "../../../../shared/styles/scss/base";
+@import "../../../../shared/styles/scss/ajaxbox";
+@import "../../../../shared/styles/scss/paginator";
+@import "./modules/htmlchars";
+@import "./modules/empty-content";
+@import "./modules/header";
+@import "./modules/home";
+@import "./modules/footer";
+@import "./modules/not-found";
+@import "./modules/terms";
+@import "./modules/animation";
+@import "./modules/cookie";
+@import "./modules/dropdown-menu";
+@import "./modules/button-top";

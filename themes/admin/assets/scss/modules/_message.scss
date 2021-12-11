@@ -1,0 +1,68 @@
+/*AJAX RESPONSES MESSAGES*/
+.ajax_response {
+    position: fixed;
+    padding: 20px 20px 0 0;
+    z-index: 998;
+    top: 0;
+    right: 0;
+    width: 300px;
+    max-width: 100%;
+
+    @media (max-width: 540px) {
+        & {
+            width: 100%;
+            padding: 20px 20px 0 20px;
+        }
+    }
+
+    .message {
+        color: $color-font-theme;
+        font-size: $font-small;
+        font-weight: $weight-normal;
+        overflow: hidden;
+        border: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 15px 15px 20px 15px;
+        background: #333333;
+        margin-bottom: 15px;
+        position: relative;
+        @include border-radius($radius-normal);
+        cursor: pointer;
+
+        &:before {
+            flex-basis: 0;
+            margin: -5px 15px 0 0 !important;
+            font-size: $font-normal;
+            color: inherit;
+        }
+
+        &.success {
+            background: $color-green;
+        }
+
+        &.info {
+            background: $color-blue;
+        }
+
+        &.warning {
+            background: $color-yellow;
+            color: $color-default;
+        }
+
+        &.error {
+            background: $color-red;
+        }
+    }
+
+    .message_time {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 4%;
+        height: 5px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
