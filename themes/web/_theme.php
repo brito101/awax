@@ -49,7 +49,7 @@
                             <li><a class="link" data-go=".team" href="#time" title="Time">Time</a></li>
                             <li><a class="link" data-go=".testimonials" href="#clientes" title="Clientes">Clientes</a></li>
                             <li><a class="link" data-go=".prices" href="#precos" title="Preços">Preços</a></li>
-                            <li><a class="link" data-go="#fatos" href="#fatos" title="Fatos">Fatos</a></li>
+                            <li><a class="link" data-go=".facts" href="#fatos" title="Fatos">Fatos</a></li>
                             <li><a class="link" data-go="#contato" href="#contato" title="Contato">Contato</a></li>
                         <?php endif; ?>
 
@@ -60,9 +60,7 @@
     </header>
 
     <!--CONTENT-->
-    <main class="main_content">
-        <?= $v->section("content"); ?>
-    </main>
+    <?= $v->section("content"); ?>
 
     <!--FOOTER-->
     <footer class="main_footer">

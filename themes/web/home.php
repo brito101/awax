@@ -384,74 +384,52 @@
         </div>
     </section>
 
-    <section class="default dark">
-        <div class="section-title">Some Facts</div>
-        <div class="section-desc">About our work</div>
-        <div class="section-body">
-            <div class="section-facts">
-                <div class="section-fact">
-                    <h3>1000</h3>
-                    <div class="section-fact-line"></div>
-                    <h4>Design Projects Released</h4>
-                    <p>Donec tincidunt cursus</p>
-                </div>
-                <div class="section-fact">
-                    <h3>900</h3>
-                    <div class="section-fact-line"></div>
-                    <h4>Photos</h4>
-                    <p>Morbi ex felis, tincidunt sed hendrerit</p>
-                </div>
-                <div class="section-fact">
-                    <h3>500</h3>
-                    <div class="section-fact-line"></div>
-                    <h4>Marketing Ideas</h4>
-                    <p>Donec tincidunt cursus</p>
-                </div>
-                <div class="section-fact">
-                    <h3>100</h3>
-                    <div class="section-fact-line"></div>
-                    <h4>Exhibitions</h4>
-                    <p>Morbi ex felis, tincidunt sed</p>
-                </div>
+    <section class="facts">
+        <div class="fadeInScroll">
+            <h2>Fatos</h2>
+            <h3>Sobre o nosso trabalho</h3>
+            <div>
+                <article>
+                    <h4>1000</h4>
+                    <div></div>
+                    <h5>Design Projects</h5>
+                    <p>Projetos de sucesso realizados</p>
+                </article>
+                <article>
+                    <h4>900</h4>
+                    <div></div>
+                    <h5>Fotos</h5>
+                    <p>Edição completa de imagens</p>
+                </article>
+                <article>
+                    <h4>500</h4>
+                    <div></div>
+                    <h5>Marketing Digital</h5>
+                    <p>Acessoria para alavancar resultados</p>
+                </article>
+                <article>
+                    <h4>100</h4>
+                    <div></div>
+                    <h5>Exibições</h5>
+                    <p>Marcando presença sempre</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <section class="section-share">
-        <div class="section-share--legend">
-            <img src="assets/images/share.png" />
-            Tell About Us:
+    <section class="share">
+        <div>
+            <img src="<?= theme("assets/images/share-1.png"); ?>" />
+            <h2>Menções sobre Nós:</h2>
         </div>
-        <div class="section-share--item">
-            <div class="section-share--icon twitter">
-                <img src="assets/images/twitter.png" />
-            </div>
-            152
-        </div>
-        <div class="section-share--item">
-            <div class="section-share--icon linkedin">
-                <img src="assets/images/linkedin.png" />
-            </div>
-            152
-        </div>
-        <div class="section-share--item">
-            <div class="section-share--icon facebook">
-                <img src="assets/images/facebook.png" />
-            </div>
-            152
-        </div>
-        <div class="section-share--item">
-            <div class="section-share--icon googleplus">
-                <img src="assets/images/googleplus.png" />
-            </div>
-            152
-        </div>
-        <div class="section-share--item">
-            <div class="section-share--icon pinterest">
-                <img src="assets/images/pinterest.png" />
-            </div>
-            152
-        </div>
+        <span class="icon-twitter"></span>
+        <p>152</p>
+        <span class="icon-facebook"></span>
+        <p>152</p>
+        <span class="icon-stack-overflow"></span>
+        <p>152</p>
+        <span class="icon-github"></span>
+        <p>152</p>
     </section>
 
     <section class="default light">

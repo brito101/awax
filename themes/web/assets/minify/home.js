@@ -9,5 +9,4 @@ const buttonsTestimonials=document.querySelectorAll(".testimonials-buttons butto
 buttonsTestimonials.forEach((el,key)=>{el.addEventListener("click",()=>{buttonsTestimonials.forEach((element)=>{element.classList.remove("active")})
 el.classList.add("active")
 itemsTestimonials.forEach((element)=>{element.classList.remove("active")})
-itemsTestimonials[key].classList.add("active")})});function typeWrite(e){const textoArray=e.innerHTML.split("");e.innerHTML=" ";textoArray.forEach((l,i)=>{setTimeout(()=>{e.innerHTML+=l},80*i)})}
-const phrase=document.querySelector(".headline");if(phrase){typeWrite(phrase)}
+itemsTestimonials[key].classList.add("active")})})
