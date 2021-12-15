@@ -25,7 +25,7 @@ abstract class Model
     /** @var string */
     protected $query;
 
-    /** @var string */
+    /** @var array|null|string */
     protected $params;
 
     /** @var string */
@@ -335,7 +335,7 @@ abstract class Model
 
     /**
      * @param string $terms
-     * @param null|string $params
+     * @param null|array|string $params
      * @return bool
      */
     public function delete(string $terms, ?string $params): bool
