@@ -37,6 +37,7 @@ define("CONF_SITE_ADDR_NUMBER", "");
 define("CONF_SITE_ADDR_COMPLEMENT", "");
 define("CONF_SITE_ADDR_CITY", "");
 define("CONF_SITE_ADDR_STATE", "");
+define("CONF_SITE_ADDR_COUNTRY", "");
 define("CONF_SITE_ADDR_ZIPCODE", "");
 
 /**

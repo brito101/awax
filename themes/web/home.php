@@ -432,21 +432,19 @@
         <p>152</p>
     </section>
 
-    <section class="default light">
-        <div class="section-title">Contact Us</div>
-        <div class="section-desc">Our Agency Located in Melbourne, Australia</div>
-        <div class="section-body">
-            <div class="section-contact">
-                <form method="POST">
-                    <div class="section-contact--split">
-                        <input type="text" name="name" placeholder="NAME" />
-                        <input type="text" name="name" placeholder="EMAIL" />
-                    </div>
-                    <input type="text" name="name" placeholder="SUBJECT" />
-                    <textarea name="message" placeholder="MESSAGE"></textarea>
-                    <input type="submit" value="Send Message" class="button" />
-                </form>
-            </div>
+    <section class="contact">
+        <div class="fadeInScroll">
+            <h2>Nos contacte</h2>
+            <h3>Nossa agência está localizada em <?= CONF_SITE_ADDR_CITY; ?> - <?= CONF_SITE_ADDR_STATE; ?>, <?= CONF_SITE_ADDR_COUNTRY; ?></h3>
+
+            <form method="POST" action="">
+                <div>
+                    <input type="text" name="name" placeholder="NOME" />
+                    <input type="text" name="name" placeholder="EMAIL" />
+                </div>
+                <textarea name="message" placeholder="MENSSAGEM"></textarea>
+                <input type="submit" value="Enviar" />
+            </form>
         </div>
     </section>
 
