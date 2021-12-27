@@ -98,6 +98,11 @@ $route->get("/usuarios/usuario/{user_id}", "Users:user");
 $route->post("/usuarios/usuario/{user_id}", "Users:user");
 //END ADMIN
 
+//API
+$route->namespace("Source\App\Api");
+$route->group(null);
+$route->get("/api/posts", "Posts:index");
+
 /**
  * ROUTE
  */
