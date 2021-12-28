@@ -784,7 +784,7 @@ CSS DE ÁREAS ESPECÍFICAS
 }
 .section-map--info-item-img img {
   width: 15px;
-  height: auto;
+  height: 15px;
 }
 
 @media (min-width: 450px) and (max-width: 800px) {

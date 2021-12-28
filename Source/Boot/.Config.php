@@ -33,12 +33,14 @@ define("CONF_SITE_LANG", "pt_BR");
 define("CONF_SITE_DEVELOPER", "Rodrigo Brito");
 define("CONF_SITE_DOMAIN", "");
 define("CONF_SITE_ADDR_STREET", "");
+define("CONF_SITE_ADDR_NEIGHBORHOOD", "");
 define("CONF_SITE_ADDR_NUMBER", "");
 define("CONF_SITE_ADDR_COMPLEMENT", "");
 define("CONF_SITE_ADDR_CITY", "");
 define("CONF_SITE_ADDR_STATE", "");
 define("CONF_SITE_ADDR_COUNTRY", "");
 define("CONF_SITE_ADDR_ZIPCODE", "");
+define("CONF_SITE_PHONE", "");
 
 /**
  * SOCIAL

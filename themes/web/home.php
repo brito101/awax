@@ -448,39 +448,29 @@
         </div>
     </section>
 
-    <section class="section-map">
-        <div class="section-map--area">
-            <div class="section-map--info">
-                <div class="section-map--info-item">
-                    <div class="section-map--info-item-img">
-                        <img src="assets/images/carta.png" />
+    <section class="map">
+        <div class="fadeInScroll">
+            <h2 class="hide">Nossa localização</h2>
+            <div>
+                <article>
+                    <div>
+                        <img src="<?= theme("/assets/images/carta.png"); ?>" alt="E-mail" />
                     </div>
-                    Endereço completão que irá ter algum tamanho
-                </div>
-                <div class="section-map--info-item">
-                    <div class="section-map--info-item-img">
-                        <img src="assets/images/localizacao.png" />
+                    <h3><?= CONF_MAIL_SUPPORT; ?></h3>
+                </article>
+                <article>
+                    <div>
+                        <img src="<?= theme("/assets/images/localizacao.png"); ?>" alt="Localização" />
                     </div>
-                    Endereço completão que irá ter algum tamanho
-                </div>
-                <div class="section-map--info-item">
-                    <div class="section-map--info-item-img">
-                        <img src="assets/images/telefone.png" />
+                    <h3><?= CONF_SITE_ADDR_STREET; ?>, <?= CONF_SITE_ADDR_NUMBER; ?>,
+                        <?= CONF_SITE_ADDR_NEIGHBORHOOD; ?>, <?= CONF_SITE_ADDR_CITY; ?> - <?= CONF_SITE_ADDR_STATE; ?>, <?= CONF_SITE_ADDR_COUNTRY; ?>. CEP: <?= CONF_SITE_ADDR_ZIPCODE; ?></h3>
+                </article>
+                <article>
+                    <div>
+                        <img src="<?= theme("/assets/images/telefone.png"); ?>" alt="Telefone" />
                     </div>
-                    Endereço completão que irá ter algum tamanho
-                </div>
-                <div class="section-map--info-item">
-                    <div class="section-map--info-item-img">
-                        <img src="assets/images/arroba.png" />
-                    </div>
-                    Endereço completão que irá ter algum tamanho
-                </div>
-                <div class="section-map--info-item">
-                    <div class="section-map--info-item-img">
-                        <img src="assets/images/web.png" />
-                    </div>
-                    Endereço completão que irá ter algum tamanho
-                </div>
+                    <h3><?= CONF_SITE_PHONE; ?></h3>
+                </article>
             </div>
         </div>
     </section>
