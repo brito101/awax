@@ -17,6 +17,7 @@
         height: 100%;
         display: inline-block;
         @include transition($hover-duration);
+        overflow: hidden;
 
         &:nth-child(1) {
           background: url("#{$imgPath}/bg-0.webp") bottom center;
